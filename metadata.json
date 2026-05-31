@@ -1,0 +1,6 @@
+{
+  "name": "AfroDidática",
+  "description": "Plataforma avançada para educadores com ferramentas pedagógicas e gerador de planos de aula por IA para o ensino de História da África Antiga.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

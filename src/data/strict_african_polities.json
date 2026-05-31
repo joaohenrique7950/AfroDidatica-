@@ -1,0 +1,1257 @@
+[
+  {
+    "polity_number": 109,
+    "polity_id": "eg_ptolemaic_k_1",
+    "long_name": "Ptolemaic Kingdom I",
+    "seshat_region": "Northeast Africa",
+    "homeNGA": "Upper Egypt",
+    "start_year": -305,
+    "end_year": -217
+  },
+  {
+    "polity_number": 113,
+    "polity_id": "gh_akan",
+    "long_name": "Akan - Pre-Ashanti",
+    "seshat_region": "West Africa",
+    "homeNGA": "Ghanaian Coast",
+    "start_year": 1501,
+    "end_year": 1701
+  },
+  {
+    "polity_number": 114,
+    "polity_id": "gh_ashanti_emp",
+    "long_name": "Ashanti Empire",
+    "seshat_region": "West Africa",
+    "homeNGA": "Ghanaian Coast",
+    "start_year": 1701,
+    "end_year": 1895
+  },
+  {
+    "polity_number": 198,
+    "polity_id": "eg_new_k_1",
+    "long_name": "Egypt - New Kingdom Thutmosid Period",
+    "seshat_region": "Northeast Africa",
+    "homeNGA": "Upper Egypt",
+    "start_year": -1550,
+    "end_year": -1293
+  },
+  {
+    "polity_number": 199,
+    "polity_id": "eg_new_k_2",
+    "long_name": "Egypt - New Kingdom Ramesside Period",
+    "seshat_region": "Northeast Africa",
+    "homeNGA": "Upper Egypt",
+    "start_year": -1293,
+    "end_year": -1070
+  },
+  {
+    "polity_number": 200,
+    "polity_id": "eg_thebes_libyan",
+    "long_name": "Egypt - Thebes-Libyan Period",
+    "seshat_region": "Northeast Africa",
+    "homeNGA": "Upper Egypt",
+    "start_year": -1069,
+    "end_year": -747
+  },
+  {
+    "polity_number": 203,
+    "polity_id": "eg_saite",
+    "long_name": "Egypt - Saite Period",
+    "seshat_region": "Northeast Africa",
+    "homeNGA": "Upper Egypt",
+    "start_year": -664,
+    "end_year": -525
+  },
+  {
+    "polity_number": 205,
+    "polity_id": "eg_inter_occupation",
+    "long_name": "Egypt - Inter-Occupation Period",
+    "seshat_region": "Northeast Africa",
+    "homeNGA": "Upper Egypt",
+    "start_year": -404,
+    "end_year": -342
+  },
+  {
+    "polity_number": 206,
+    "polity_id": "dz_numidia",
+    "long_name": "Numidia",
+    "seshat_region": "Maghreb",
+    "start_year": -220,
+    "end_year": -46
+  },
+  {
+    "polity_number": 207,
+    "polity_id": "eg_ptolemaic_k_2",
+    "long_name": "Ptolemaic Kingdom II",
+    "seshat_region": "Northeast Africa",
+    "homeNGA": "Upper Egypt",
+    "start_year": -217,
+    "end_year": -30
+  },
+  {
+    "polity_number": 208,
+    "polity_id": "et_aksum_emp_1",
+    "long_name": "Axum I",
+    "seshat_region": "East Africa",
+    "homeNGA": "Yemeni Coastal Plain",
+    "start_year": -149,
+    "end_year": 349
+  },
+  {
+    "polity_number": 209,
+    "polity_id": "ma_mauretania",
+    "long_name": "Mauretania",
+    "seshat_region": "Sahel",
+    "start_year": -125,
+    "end_year": 44
+  },
+  {
+    "polity_number": 210,
+    "polity_id": "et_aksum_emp_2",
+    "long_name": "Axum II",
+    "seshat_region": "East Africa",
+    "start_year": 350,
+    "end_year": 599
+  },
+  {
+    "polity_number": 212,
+    "polity_id": "sd_makuria_k_1",
+    "long_name": "Makuria Kingdom I",
+    "seshat_region": "Northeast Africa",
+    "start_year": 568,
+    "end_year": 618
+  },
+  {
+    "polity_number": 213,
+    "polity_id": "et_aksum_emp_3",
+    "long_name": "Axum III",
+    "seshat_region": "East Africa",
+    "start_year": 600,
+    "end_year": 800
+  },
+  {
+    "polity_number": 215,
+    "polity_id": "sd_makuria_k_2",
+    "long_name": "Makuria Kingdom II",
+    "seshat_region": "Northeast Africa",
+    "start_year": 619,
+    "end_year": 849
+  },
+  {
+    "polity_number": 216,
+    "polity_id": "mr_wagadu_2",
+    "long_name": "Middle Wagadu Empire",
+    "seshat_region": "West Africa",
+    "homeNGA": "Niger Inland Delta",
+    "start_year": 700,
+    "end_year": 1077
+  },
+  {
+    "polity_number": 217,
+    "polity_id": "dz_tahert",
+    "long_name": "Tahert",
+    "seshat_region": "Maghreb",
+    "start_year": 761,
+    "end_year": 909
+  },
+  {
+    "polity_number": 218,
+    "polity_id": "ma_idrisid_dyn",
+    "long_name": "Idrisids",
+    "seshat_region": "Maghreb",
+    "start_year": 789,
+    "end_year": 917
+  },
+  {
+    "polity_number": 219,
+    "polity_id": "sd_makuria_k_3",
+    "long_name": "Makuria Kingdom III",
+    "seshat_region": "Northeast Africa",
+    "start_year": 850,
+    "end_year": 1099
+  },
+  {
+    "polity_number": 221,
+    "polity_id": "tn_fatimid_cal",
+    "long_name": "Fatimid Caliphate",
+    "seshat_region": "Northeast Africa",
+    "homeNGA": "Upper Egypt",
+    "start_year": 909,
+    "end_year": 1171
+  },
+  {
+    "polity_number": 222,
+    "polity_id": "tn_zirid_dyn",
+    "long_name": "Zirids",
+    "seshat_region": "Maghreb",
+    "start_year": 973,
+    "end_year": 1148
+  },
+  {
+    "polity_number": 223,
+    "polity_id": "ma_almoravid_dyn",
+    "long_name": "Almoravids",
+    "seshat_region": "Maghreb",
+    "start_year": 1035,
+    "end_year": 1150
+  },
+  {
+    "polity_number": 224,
+    "polity_id": "mr_wagadu_3",
+    "long_name": "Later Wagadu Empire",
+    "seshat_region": "West Africa",
+    "homeNGA": "Niger Inland Delta",
+    "start_year": 1078,
+    "end_year": 1203
+  },
+  {
+    "polity_number": 226,
+    "polity_id": "ib_banu_ghaniya",
+    "long_name": "Banu Ghaniya",
+    "seshat_region": "Maghreb",
+    "start_year": 1126,
+    "end_year": 1227
+  },
+  {
+    "polity_number": 227,
+    "polity_id": "et_zagwe",
+    "long_name": "Zagwe",
+    "seshat_region": "East Africa",
+    "start_year": 1137,
+    "end_year": 1269
+  },
+  {
+    "polity_number": 229,
+    "polity_id": "ml_mali_emp",
+    "long_name": "Mali Empire",
+    "seshat_region": "West Africa",
+    "homeNGA": "Niger Inland Delta",
+    "start_year": 1230,
+    "end_year": 1410
+  },
+  {
+    "polity_number": 230,
+    "polity_id": "dz_tlemcen",
+    "long_name": "Tlemcen",
+    "seshat_region": "Maghreb",
+    "start_year": 1235,
+    "end_year": 1554
+  },
+  {
+    "polity_number": 232,
+    "polity_id": "eg_mamluk_sultanate_1",
+    "long_name": "Egypt - Mamluk Sultanate I",
+    "seshat_region": "Northeast Africa",
+    "homeNGA": "Upper Egypt",
+    "start_year": 1260,
+    "end_year": 1348
+  },
+  {
+    "polity_number": 236,
+    "polity_id": "eg_mamluk_sultanate_2",
+    "long_name": "Egypt - Mamluk Sultanate II",
+    "seshat_region": "Northeast Africa",
+    "homeNGA": "Upper Egypt",
+    "start_year": 1348,
+    "end_year": 1412
+  },
+  {
+    "polity_number": 237,
+    "polity_id": "ml_songhai_1",
+    "long_name": "Songhai Empire",
+    "seshat_region": "Sahel",
+    "start_year": 1376,
+    "end_year": 1493
+  },
+  {
+    "polity_number": 239,
+    "polity_id": "eg_mamluk_sultanate_3",
+    "long_name": "Egypt - Mamluk Sultanate III",
+    "seshat_region": "Northeast Africa",
+    "homeNGA": "Upper Egypt",
+    "start_year": 1412,
+    "end_year": 1517
+  },
+  {
+    "polity_number": 240,
+    "polity_id": "ma_wattasid_dyn",
+    "long_name": "Wattasid",
+    "seshat_region": "Maghreb",
+    "start_year": 1465,
+    "end_year": 1554
+  },
+  {
+    "polity_number": 241,
+    "polity_id": "ao_kongo_2",
+    "long_name": "Kingdom of Congo",
+    "seshat_region": "Central Africa",
+    "start_year": 1491,
+    "end_year": 1568
+  },
+  {
+    "polity_number": 242,
+    "polity_id": "ml_songhai_2",
+    "long_name": "Songhai Empire - Askiya Dynasty",
+    "seshat_region": "West Africa",
+    "homeNGA": "Niger Inland Delta",
+    "start_year": 1493,
+    "end_year": 1591
+  },
+  {
+    "polity_number": 361,
+    "polity_id": "eg_thulunid_ikhshidid",
+    "long_name": "Egypt - Tulunid-Ikhshidid Period",
+    "seshat_region": "Northeast Africa",
+    "homeNGA": "Upper Egypt",
+    "start_year": 868,
+    "end_year": 969
+  },
+  {
+    "polity_number": 367,
+    "polity_id": "eg_ayyubid_sultanate",
+    "long_name": "Ayyubid Sultanate",
+    "seshat_region": "Northeast Africa",
+    "homeNGA": "Upper Egypt",
+    "start_year": 1171,
+    "end_year": 1250
+  },
+  {
+    "polity_number": 427,
+    "polity_id": "ml_jenne_jeno_1",
+    "long_name": "Jenne-jeno I",
+    "seshat_region": "West Africa",
+    "homeNGA": "Niger Inland Delta",
+    "start_year": -250,
+    "end_year": 49
+  },
+  {
+    "polity_number": 428,
+    "polity_id": "ml_jenne_jeno_2",
+    "long_name": "Jenne-jeno II",
+    "seshat_region": "West Africa",
+    "homeNGA": "Niger Inland Delta",
+    "start_year": 50,
+    "end_year": 399
+  },
+  {
+    "polity_number": 429,
+    "polity_id": "mr_wagadu_1",
+    "long_name": "Early Wagadu Empire",
+    "seshat_region": "West Africa",
+    "start_year": 250,
+    "end_year": 700
+  },
+  {
+    "polity_number": 430,
+    "polity_id": "ml_jenne_jeno_3",
+    "long_name": "Jenne-jeno III",
+    "seshat_region": "West Africa",
+    "homeNGA": "Niger Inland Delta",
+    "start_year": 400,
+    "end_year": 899
+  },
+  {
+    "polity_number": 431,
+    "polity_id": "ml_jenne_jeno_4",
+    "long_name": "Jenne-jeno IV",
+    "seshat_region": "West Africa",
+    "homeNGA": "Niger Inland Delta",
+    "start_year": 900,
+    "end_year": 1300
+  },
+  {
+    "polity_number": 432,
+    "polity_id": "ma_saadi_sultanate",
+    "long_name": "Saadi Sultanate",
+    "seshat_region": "Maghreb",
+    "homeNGA": "Niger Inland Delta",
+    "start_year": 1554,
+    "end_year": 1659
+  },
+  {
+    "polity_number": 433,
+    "polity_id": "ml_segou_k",
+    "long_name": "Segou Kingdom",
+    "seshat_region": "West Africa",
+    "homeNGA": "Niger Inland Delta",
+    "start_year": 1650,
+    "end_year": 1712
+  },
+  {
+    "polity_number": 434,
+    "polity_id": "ml_bamana_k",
+    "long_name": "Bamana kingdom",
+    "seshat_region": "West Africa",
+    "homeNGA": "Niger Inland Delta",
+    "start_year": 1712,
+    "end_year": 1861
+  },
+  {
+    "polity_number": 510,
+    "polity_id": "eg_badarian",
+    "long_name": "Badarian",
+    "seshat_region": "Northeast Africa",
+    "homeNGA": "Upper Egypt",
+    "start_year": -4400,
+    "end_year": -3800
+  },
+  {
+    "polity_number": 511,
+    "polity_id": "eg_naqada_1",
+    "long_name": "Naqada I",
+    "seshat_region": "Northeast Africa",
+    "homeNGA": "Upper Egypt",
+    "start_year": -3800,
+    "end_year": -3550
+  },
+  {
+    "polity_number": 512,
+    "polity_id": "eg_naqada_2",
+    "long_name": "Naqada II",
+    "seshat_region": "Northeast Africa",
+    "homeNGA": "Upper Egypt",
+    "start_year": -3550,
+    "end_year": -3300
+  },
+  {
+    "polity_number": 513,
+    "polity_id": "eg_naqada_3",
+    "long_name": "Egypt - Dynasty 0",
+    "seshat_region": "Northeast Africa",
+    "homeNGA": "Upper Egypt",
+    "start_year": -3300,
+    "end_year": -3100
+  },
+  {
+    "polity_number": 514,
+    "polity_id": "eg_dynasty_1",
+    "long_name": "Egypt - Dynasty I",
+    "seshat_region": "Northeast Africa",
+    "homeNGA": "Upper Egypt",
+    "start_year": -3100,
+    "end_year": -2900
+  },
+  {
+    "polity_number": 515,
+    "polity_id": "eg_dynasty_2",
+    "long_name": "Egypt - Dynasty II",
+    "seshat_region": "Northeast Africa",
+    "homeNGA": "Upper Egypt",
+    "start_year": -2900,
+    "end_year": -2687
+  },
+  {
+    "polity_number": 516,
+    "polity_id": "eg_old_k_1",
+    "long_name": "Egypt - Classic Old Kingdom",
+    "seshat_region": "Northeast Africa",
+    "homeNGA": "Upper Egypt",
+    "start_year": -2650,
+    "end_year": -2350
+  },
+  {
+    "polity_number": 517,
+    "polity_id": "eg_old_k_2",
+    "long_name": "Egypt - Late Old Kingdom",
+    "seshat_region": "Northeast Africa",
+    "homeNGA": "Upper Egypt",
+    "start_year": -2350,
+    "end_year": -2150
+  },
+  {
+    "polity_number": 518,
+    "polity_id": "eg_regions",
+    "long_name": "Egypt - Period of the Regions",
+    "seshat_region": "Northeast Africa",
+    "homeNGA": "Upper Egypt",
+    "start_year": -2150,
+    "end_year": -2016
+  },
+  {
+    "polity_number": 519,
+    "polity_id": "eg_middle_k",
+    "long_name": "Egypt - Middle Kingdom",
+    "seshat_region": "Northeast Africa",
+    "homeNGA": "Upper Egypt",
+    "start_year": -2016,
+    "end_year": -1700
+  },
+  {
+    "polity_number": 520,
+    "polity_id": "eg_thebes_hyksos",
+    "long_name": "Egypt - Thebes-Hyksos Period",
+    "seshat_region": "Northeast Africa",
+    "homeNGA": "Upper Egypt",
+    "start_year": -1720,
+    "end_year": -1567
+  },
+  {
+    "polity_number": 521,
+    "polity_id": "eg_kushite",
+    "long_name": "Egypt - Kushite Period",
+    "seshat_region": "Northeast Africa",
+    "homeNGA": "Upper Egypt",
+    "start_year": -747,
+    "end_year": -656
+  },
+  {
+    "polity_number": 533,
+    "polity_id": "ug_early_nyoro",
+    "long_name": "Early Nyoro",
+    "seshat_region": "Central Africa",
+    "start_year": 900,
+    "end_year": 1449
+  },
+  {
+    "polity_number": 534,
+    "polity_id": "ug_bunyoro_k_1",
+    "long_name": "Cwezi Dynasty",
+    "seshat_region": "Central Africa",
+    "start_year": 1450,
+    "end_year": 1699
+  },
+  {
+    "polity_number": 535,
+    "polity_id": "ug_bunyoro_k_2",
+    "long_name": "Bito Dynasty",
+    "seshat_region": "Central Africa",
+    "start_year": 1700,
+    "end_year": 1894
+  },
+  {
+    "polity_number": 578,
+    "polity_id": "mo_alawi_dyn_1",
+    "long_name": "Alaouite Dynasty I",
+    "seshat_region": "Maghreb",
+    "start_year": 1631,
+    "end_year": 1727
+  },
+  {
+    "polity_number": 585,
+    "polity_id": "mo_alawi_dyn_2",
+    "long_name": "Alawi Dynasty",
+    "seshat_region": "Maghreb",
+    "start_year": 1728,
+    "end_year": 1912
+  },
+  {
+    "polity_number": 607,
+    "polity_id": "si_early_modern_interior",
+    "long_name": "Early Modern Sierra Leone",
+    "seshat_region": "West Africa",
+    "start_year": 1650,
+    "end_year": 1896
+  },
+  {
+    "polity_number": 608,
+    "polity_id": "gm_kaabu_emp",
+    "long_name": "Kaabu",
+    "seshat_region": "West Africa",
+    "start_year": 1500,
+    "end_year": 1867
+  },
+  {
+    "polity_number": 609,
+    "polity_id": "si_freetown_1",
+    "long_name": "Freetown",
+    "seshat_region": "West Africa",
+    "start_year": 1787,
+    "end_year": 1808
+  },
+  {
+    "polity_number": 610,
+    "polity_id": "gu_futa_jallon",
+    "long_name": "Futa Jallon",
+    "seshat_region": "West Africa",
+    "start_year": 1725,
+    "end_year": 1896
+  },
+  {
+    "polity_number": 611,
+    "polity_id": "si_mane_emp",
+    "long_name": "Mane",
+    "seshat_region": "West Africa",
+    "start_year": 1550,
+    "end_year": 1650
+  },
+  {
+    "polity_number": 612,
+    "polity_id": "ni_nok_1",
+    "long_name": "Middle and Late Nok",
+    "seshat_region": "West Africa",
+    "start_year": -1500,
+    "end_year": -901
+  },
+  {
+    "polity_number": 613,
+    "polity_id": "bf_west_burkina_faso_yellow_5",
+    "long_name": "West Burkina Faso Yellow I",
+    "seshat_region": "West Africa",
+    "start_year": 100,
+    "end_year": 500
+  },
+  {
+    "polity_number": 614,
+    "polity_id": "cd_kanem",
+    "long_name": "Kanem",
+    "seshat_region": "West Africa",
+    "start_year": 800,
+    "end_year": 1379
+  },
+  {
+    "polity_number": 615,
+    "polity_id": "ni_nok_2",
+    "long_name": "Middle and Late Nok",
+    "seshat_region": "West Africa",
+    "start_year": -900,
+    "end_year": 0
+  },
+  {
+    "polity_number": 616,
+    "polity_id": "si_pre_sape",
+    "long_name": "Pre-Sape Sierra Leone",
+    "seshat_region": "West Africa",
+    "start_year": 600,
+    "end_year": 1400
+  },
+  {
+    "polity_number": 617,
+    "polity_id": "bf_west_burkina_faso_red_2",
+    "long_name": "West Burkina Faso Red II and III",
+    "seshat_region": "West Africa",
+    "start_year": 1100,
+    "end_year": 1400
+  },
+  {
+    "polity_number": 618,
+    "polity_id": "bf_west_burkina_faso_red_4",
+    "long_name": "West Burkina Faso Red IV",
+    "seshat_region": "West Africa",
+    "start_year": 1401,
+    "end_year": 1500
+  },
+  {
+    "polity_number": 619,
+    "polity_id": "bf_west_burkina_faso_red_1",
+    "long_name": "West Burkina Faso Red I",
+    "seshat_region": "West Africa",
+    "start_year": 701,
+    "end_year": 1100
+  },
+  {
+    "polity_number": 620,
+    "polity_id": "bf_mossi_k_1",
+    "long_name": "Mossi",
+    "seshat_region": "West Africa",
+    "start_year": 1100,
+    "end_year": 1897
+  },
+  {
+    "polity_number": 621,
+    "polity_id": "si_sape",
+    "long_name": "Sape",
+    "seshat_region": "West Africa",
+    "start_year": 1400,
+    "end_year": 1550
+  },
+  {
+    "polity_number": 622,
+    "polity_id": "bf_west_burkina_faso_yellow_6",
+    "long_name": "West Burkina Faso Yellow II",
+    "seshat_region": "West Africa",
+    "start_year": 501,
+    "end_year": 700
+  },
+  {
+    "polity_number": 623,
+    "polity_id": "zi_toutswe",
+    "long_name": "Toutswe",
+    "seshat_region": "Southern Africa",
+    "start_year": 700,
+    "end_year": 1250
+  },
+  {
+    "polity_number": 624,
+    "polity_id": "zi_great_zimbabwe",
+    "long_name": "Great Zimbabwe",
+    "seshat_region": "Southern Africa",
+    "start_year": 1270,
+    "end_year": 1550
+  },
+  {
+    "polity_number": 625,
+    "polity_id": "zi_torwa_rozvi",
+    "long_name": "Torwa-Rozvi",
+    "seshat_region": "Southern Africa",
+    "start_year": 1494,
+    "end_year": 1850
+  },
+  {
+    "polity_number": 626,
+    "polity_id": "zi_mutapa",
+    "long_name": "Mutapa",
+    "seshat_region": "Southern Africa",
+    "start_year": 1450,
+    "end_year": 1880
+  },
+  {
+    "polity_number": 636,
+    "polity_id": "et_jimma_k",
+    "long_name": "Kingdom of Jimma",
+    "seshat_region": "East Africa",
+    "start_year": 1790,
+    "end_year": 1932
+  },
+  {
+    "polity_number": 637,
+    "polity_id": "so_adal_sultanate",
+    "long_name": "Adal Sultanate",
+    "seshat_region": "East Africa",
+    "start_year": 1375,
+    "end_year": 1543
+  },
+  {
+    "polity_number": 638,
+    "polity_id": "so_tunni_sultanate",
+    "long_name": "Tunni Sultanate",
+    "seshat_region": "East Africa",
+    "start_year": 800,
+    "end_year": 1200
+  },
+  {
+    "polity_number": 639,
+    "polity_id": "so_ajuran_sultanate",
+    "long_name": "Ajuran Sultanate",
+    "seshat_region": "East Africa",
+    "start_year": 1250,
+    "end_year": 1700
+  },
+  {
+    "polity_number": 640,
+    "polity_id": "so_habr_yunis",
+    "long_name": "Habr Yunis",
+    "seshat_region": "East Africa",
+    "start_year": 1300,
+    "end_year": 1886
+  },
+  {
+    "polity_number": 641,
+    "polity_id": "et_gomma_k",
+    "long_name": "Kingdom of Gomma",
+    "seshat_region": "East Africa",
+    "start_year": 1780,
+    "end_year": 1886
+  },
+  {
+    "polity_number": 642,
+    "polity_id": "so_geledi_sultanate",
+    "long_name": "Sultanate of Geledi",
+    "seshat_region": "East Africa",
+    "start_year": 1750,
+    "end_year": 1911
+  },
+  {
+    "polity_number": 643,
+    "polity_id": "et_showa_sultanate",
+    "long_name": "Shoa Sultanate",
+    "seshat_region": "East Africa",
+    "start_year": 1108,
+    "end_year": 1285
+  },
+  {
+    "polity_number": 644,
+    "polity_id": "et_harla_k",
+    "long_name": "Harla Kingdom",
+    "seshat_region": "East Africa",
+    "start_year": 500,
+    "end_year": 1500
+  },
+  {
+    "polity_number": 645,
+    "polity_id": "et_hadiya_sultanate",
+    "long_name": "Hadiya Sultanate",
+    "seshat_region": "East Africa",
+    "start_year": 1300,
+    "end_year": 1680
+  },
+  {
+    "polity_number": 646,
+    "polity_id": "so_ifat_sultanate",
+    "long_name": "Ifat Sultanate",
+    "seshat_region": "East Africa",
+    "start_year": 1280,
+    "end_year": 1375
+  },
+  {
+    "polity_number": 647,
+    "polity_id": "er_medri_bahri",
+    "long_name": "Medri Bahri",
+    "seshat_region": "East Africa",
+    "start_year": 1310,
+    "end_year": 1889
+  },
+  {
+    "polity_number": 648,
+    "polity_id": "so_majeerteen_sultanate",
+    "long_name": "Majeerteen Sultanate",
+    "seshat_region": "East Africa",
+    "start_year": 1750,
+    "end_year": 1926
+  },
+  {
+    "polity_number": 649,
+    "polity_id": "et_funj_sultanate",
+    "long_name": "Funj Sultanate",
+    "seshat_region": "East Africa",
+    "start_year": 1504,
+    "end_year": 1820
+  },
+  {
+    "polity_number": 650,
+    "polity_id": "et_kaffa_k",
+    "long_name": "Kingdom of Kaffa",
+    "seshat_region": "East Africa",
+    "start_year": 1390,
+    "end_year": 1897
+  },
+  {
+    "polity_number": 651,
+    "polity_id": "et_gumma_k",
+    "long_name": "Kingdom of Gumma",
+    "seshat_region": "East Africa",
+    "start_year": 1800,
+    "end_year": 1897
+  },
+  {
+    "polity_number": 652,
+    "polity_id": "et_harar_emirate",
+    "long_name": "Emirate of Harar",
+    "seshat_region": "East Africa",
+    "start_year": 1650,
+    "end_year": 1875
+  },
+  {
+    "polity_number": 653,
+    "polity_id": "et_aussa_sultanate",
+    "long_name": "Early Sultanate of Aussa",
+    "seshat_region": "East Africa",
+    "start_year": 1734,
+    "end_year": 1895
+  },
+  {
+    "polity_number": 654,
+    "polity_id": "so_isaaq_sultanate",
+    "long_name": "Isaaq Sultanate",
+    "seshat_region": "East Africa",
+    "start_year": 1300,
+    "end_year": 1886
+  },
+  {
+    "polity_number": 655,
+    "polity_id": "ni_proto_yoruba",
+    "long_name": "Proto-Yoruba",
+    "seshat_region": "West Africa",
+    "start_year": 301,
+    "end_year": 649
+  },
+  {
+    "polity_number": 656,
+    "polity_id": "ni_yoruba_classic",
+    "long_name": "Classical Ife",
+    "seshat_region": "West Africa",
+    "start_year": 1000,
+    "end_year": 1400
+  },
+  {
+    "polity_number": 657,
+    "polity_id": "ni_formative_yoruba",
+    "long_name": "Late Formative Yoruba",
+    "seshat_region": "West Africa",
+    "start_year": 650,
+    "end_year": 1049
+  },
+  {
+    "polity_number": 658,
+    "polity_id": "ni_kwararafa",
+    "long_name": "Kwararafa",
+    "seshat_region": "West Africa",
+    "start_year": 596,
+    "end_year": 1820
+  },
+  {
+    "polity_number": 659,
+    "polity_id": "ni_allada_k",
+    "long_name": "Allada",
+    "seshat_region": "West Africa",
+    "start_year": 1100,
+    "end_year": 1724
+  },
+  {
+    "polity_number": 660,
+    "polity_id": "ni_igodomingodo",
+    "long_name": "Igodomingodo",
+    "seshat_region": "West Africa",
+    "start_year": 900,
+    "end_year": 1450
+  },
+  {
+    "polity_number": 661,
+    "polity_id": "ni_oyo_emp_2",
+    "long_name": "Ilú-ọba Ọ̀yọ́",
+    "seshat_region": "West Africa",
+    "start_year": 1601,
+    "end_year": 1835
+  },
+  {
+    "polity_number": 662,
+    "polity_id": "ni_whydah_k",
+    "long_name": "Whydah",
+    "seshat_region": "West Africa",
+    "start_year": 1671,
+    "end_year": 1727
+  },
+  {
+    "polity_number": 663,
+    "polity_id": "ni_oyo_emp_1",
+    "long_name": "Oyo",
+    "seshat_region": "West Africa",
+    "start_year": 1300,
+    "end_year": 1535
+  },
+  {
+    "polity_number": 664,
+    "polity_id": "ni_proto_yoruboid",
+    "long_name": "Proto-Yoruboid",
+    "seshat_region": "West Africa",
+    "start_year": -300,
+    "end_year": 300
+  },
+  {
+    "polity_number": 665,
+    "polity_id": "ni_aro",
+    "long_name": "Aro",
+    "seshat_region": "West Africa",
+    "start_year": 1690,
+    "end_year": 1902
+  },
+  {
+    "polity_number": 666,
+    "polity_id": "ni_sokoto_cal",
+    "long_name": "Sokoto Caliphate",
+    "seshat_region": "West Africa",
+    "start_year": 1804,
+    "end_year": 1904
+  },
+  {
+    "polity_number": 667,
+    "polity_id": "ni_igala_k",
+    "long_name": "Igala",
+    "seshat_region": "West Africa",
+    "start_year": 1600,
+    "end_year": 1900
+  },
+  {
+    "polity_number": 668,
+    "polity_id": "ni_nri_k",
+    "long_name": "Ọ̀ràézè Ǹrì",
+    "seshat_region": "West Africa",
+    "start_year": 1043,
+    "end_year": 1911
+  },
+  {
+    "polity_number": 669,
+    "polity_id": "ni_hausa_k",
+    "long_name": "Hausa bakwai",
+    "seshat_region": "West Africa",
+    "start_year": 900,
+    "end_year": 1808
+  },
+  {
+    "polity_number": 670,
+    "polity_id": "ni_bornu_emp",
+    "long_name": "Kanem-Borno",
+    "seshat_region": "West Africa",
+    "start_year": 1380,
+    "end_year": 1893
+  },
+  {
+    "polity_number": 671,
+    "polity_id": "ni_dahomey_k",
+    "long_name": "Foys",
+    "seshat_region": "West Africa",
+    "start_year": 1715,
+    "end_year": 1894
+  },
+  {
+    "polity_number": 672,
+    "polity_id": "ni_benin_emp",
+    "long_name": "Benin Empire",
+    "seshat_region": "West Africa",
+    "start_year": 1140,
+    "end_year": 1897
+  },
+  {
+    "polity_number": 673,
+    "polity_id": "ni_wukari_fed",
+    "long_name": "Wukari Federation",
+    "seshat_region": "West Africa",
+    "start_year": 1820,
+    "end_year": 1899
+  },
+  {
+    "polity_number": 674,
+    "polity_id": "se_cayor_k",
+    "long_name": "Kingdom of Cayor",
+    "seshat_region": "West Africa",
+    "start_year": 1549,
+    "end_year": 1864
+  },
+  {
+    "polity_number": 675,
+    "polity_id": "se_saloum_k",
+    "long_name": "Kingdom of Saloum",
+    "seshat_region": "West Africa",
+    "start_year": 1490,
+    "end_year": 1863
+  },
+  {
+    "polity_number": 676,
+    "polity_id": "se_baol_k",
+    "long_name": "Kingdom of Baol",
+    "seshat_region": "West Africa",
+    "start_year": 1550,
+    "end_year": 1890
+  },
+  {
+    "polity_number": 677,
+    "polity_id": "se_sine_k",
+    "long_name": "Kingdom of Sine",
+    "seshat_region": "West Africa",
+    "start_year": 1350,
+    "end_year": 1887
+  },
+  {
+    "polity_number": 678,
+    "polity_id": "se_waalo_k",
+    "long_name": "Kingdom of Waalo",
+    "seshat_region": "West Africa",
+    "start_year": 1287,
+    "end_year": 1855
+  },
+  {
+    "polity_number": 679,
+    "polity_id": "se_jolof_emp",
+    "long_name": "Jolof Empire",
+    "seshat_region": "West Africa",
+    "start_year": 1360,
+    "end_year": 1549
+  },
+  {
+    "polity_number": 680,
+    "polity_id": "se_futa_toro_imamate",
+    "long_name": "Imamate of Futa Toro",
+    "seshat_region": "West Africa",
+    "start_year": 1776,
+    "end_year": 1860
+  },
+  {
+    "polity_number": 681,
+    "polity_id": "se_great_fulo_emp",
+    "long_name": "Denyanke Kingdom",
+    "seshat_region": "West Africa",
+    "start_year": 1490,
+    "end_year": 1776
+  },
+  {
+    "polity_number": 682,
+    "polity_id": "se_jolof_k",
+    "long_name": "Kingdom of Jolof",
+    "seshat_region": "West Africa",
+    "start_year": 1549,
+    "end_year": 1865
+  },
+  {
+    "polity_number": 683,
+    "polity_id": "ug_buganda_k_2",
+    "long_name": "Buganda II",
+    "seshat_region": "East Africa",
+    "start_year": 1717,
+    "end_year": 1894
+  },
+  {
+    "polity_number": 684,
+    "polity_id": "ug_toro_k",
+    "long_name": "Toro",
+    "seshat_region": "East Africa",
+    "start_year": 1830,
+    "end_year": 1896
+  },
+  {
+    "polity_number": 685,
+    "polity_id": "ug_buganda_k_1",
+    "long_name": "Buganda I",
+    "seshat_region": "East Africa",
+    "start_year": 1408,
+    "end_year": 1716
+  },
+  {
+    "polity_number": 686,
+    "polity_id": "tz_karagwe_k",
+    "long_name": "Karagwe",
+    "seshat_region": "East Africa",
+    "start_year": 1500,
+    "end_year": 1916
+  },
+  {
+    "polity_number": 687,
+    "polity_id": "Early Niynginya",
+    "long_name": "Kingdom of Nyinginya",
+    "seshat_region": "East Africa",
+    "start_year": 1650,
+    "end_year": 1897
+  },
+  {
+    "polity_number": 688,
+    "polity_id": "ug_nkore_k_1",
+    "long_name": "Nkore",
+    "seshat_region": "East Africa",
+    "start_year": 1450,
+    "end_year": 1749
+  },
+  {
+    "polity_number": 689,
+    "polity_id": "rw_ndorwa_k",
+    "long_name": "Ndorwa",
+    "seshat_region": "East Africa",
+    "start_year": 1700,
+    "end_year": 1800
+  },
+  {
+    "polity_number": 690,
+    "polity_id": "bu_burundi_k",
+    "long_name": "Burundi",
+    "seshat_region": "East Africa",
+    "start_year": 1680,
+    "end_year": 1903
+  },
+  {
+    "polity_number": 691,
+    "polity_id": "rw_mubari_k",
+    "long_name": "Mubari",
+    "seshat_region": "East Africa",
+    "start_year": 1700,
+    "end_year": 1896
+  },
+  {
+    "polity_number": 692,
+    "polity_id": "rw_gisaka_k",
+    "long_name": "Gisaka",
+    "seshat_region": "East Africa",
+    "start_year": 1700,
+    "end_year": 1867
+  },
+  {
+    "polity_number": 693,
+    "polity_id": "tz_milansi_k",
+    "long_name": "Fipa",
+    "seshat_region": "East Africa",
+    "start_year": 1600,
+    "end_year": 1890
+  },
+  {
+    "polity_number": 694,
+    "polity_id": "rw_bugesera_k",
+    "long_name": "Bugesera",
+    "seshat_region": "East Africa",
+    "start_year": 1700,
+    "end_year": 1799
+  },
+  {
+    "polity_number": 695,
+    "polity_id": "ug_nkore_k_2",
+    "long_name": "Nkore",
+    "seshat_region": "East Africa",
+    "start_year": 1750,
+    "end_year": 1901
+  },
+  {
+    "polity_number": 696,
+    "polity_id": "tz_buhayo_k",
+    "long_name": "Buhaya",
+    "seshat_region": "East Africa",
+    "start_year": 1700,
+    "end_year": 1890
+  },
+  {
+    "polity_number": 710,
+    "polity_id": "tz_tana",
+    "long_name": "Classic Tana",
+    "seshat_region": "East Africa",
+    "start_year": 1000,
+    "end_year": 1498
+  },
+  {
+    "polity_number": 715,
+    "polity_id": "tz_east_africa_ia_1",
+    "long_name": "Early East Africa Iron Age",
+    "seshat_region": "East Africa",
+    "start_year": 200,
+    "end_year": 499
+  },
+  {
+    "polity_number": 716,
+    "polity_id": "tz_early_tana_1",
+    "long_name": "Early Tana 1",
+    "seshat_region": "East Africa",
+    "start_year": 500,
+    "end_year": 749
+  },
+  {
+    "polity_number": 717,
+    "polity_id": "tz_early_tana_2",
+    "long_name": "Early Tana 2",
+    "seshat_region": "East Africa",
+    "start_year": 750,
+    "end_year": 999
+  },
+  {
+    "polity_number": 772,
+    "polity_id": "tz_east_africa_ia_2",
+    "long_name": "Late East Africa Iron Age",
+    "seshat_region": "East Africa",
+    "start_year": 800,
+    "end_year": 1150
+  },
+  {
+    "polity_number": 773,
+    "polity_id": "mw_pre_maravi",
+    "long_name": "Pre-Maravi",
+    "seshat_region": "Southern Africa",
+    "start_year": 1151,
+    "end_year": 1399
+  },
+  {
+    "polity_number": 774,
+    "polity_id": "mw_early_maravi",
+    "long_name": "Early Maravi",
+    "seshat_region": "Southern Africa",
+    "start_year": 1400,
+    "end_year": 1499
+  },
+  {
+    "polity_number": 775,
+    "polity_id": "mw_northern_maravi_k",
+    "long_name": "Northern Maravi Kingdom",
+    "seshat_region": "Southern Africa",
+    "start_year": 1500,
+    "end_year": 1621
+  },
+  {
+    "polity_number": 776,
+    "polity_id": "mw_maravi_emp",
+    "long_name": "Maravi Empire",
+    "seshat_region": "Southern Africa",
+    "start_year": 1622,
+    "end_year": 1870
+  }
+]
