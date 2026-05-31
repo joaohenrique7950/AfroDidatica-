@@ -39,7 +39,7 @@ Para evitar a representação estática ou anacrônica das fronteiras africanas,
 
 O módulo gerador de materiais didáticos do **AfroDidática** opera através de um motor de backend estruturado em Node.js (`server.ts`). Em vez de expor o modelo a requisições livres ou desreguladas de usuário, o sistema atua como um coordenador curricular que monta e envia um prompt determinístico fundamentado (*Grounded Prompting*) para os modelos de fundação generativos em nuvem através de SDK oficial.
 
-### Estrutura de Formulation do Contexto
+### Estrutura de Formulação do Contexto
 
 O prompt final é construído concatenando quatro componentes de dados estruturados e limpos:
 1.  **Metadados Curriculares**: Segmento escolar alvo (ano letivo), duração da aula recomendada e diretrizes de alinhamento ao currículo formal (como a BNCC).
