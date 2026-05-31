@@ -39,13 +39,23 @@ Para evitar a representação estática ou anacrônica das fronteiras africanas,
 
 O módulo gerador de materiais didáticos do **AfroDidática** opera através de um motor de backend estruturado em Node.js (`server.ts`). Em vez de expor o modelo a requisições livres ou desreguladas de usuário, o sistema atua como um coordenador curricular que monta e envia um prompt determinístico fundamentado (*Grounded Prompting*) para os modelos de fundação generativos em nuvem através de SDK oficial.
 
-### Estrutura de Formulação do Contexto
+### Estrutura de Formulation do Contexto
 
 O prompt final é construído concatenando quatro componentes de dados estruturados e limpos:
 1.  **Metadados Curriculares**: Segmento escolar alvo (ano letivo), duração da aula recomendada e diretrizes de alinhamento ao currículo formal (como a BNCC).
 2.  **Dados Geográficos/Cronológicos Seshat**: O ano exato selecionado e as coordenadas espaciais vinculadas à escala de complexidade social da civilização em estudo.
 3.  **Variáveis Temáticas Selecionadas**: Focos de investigação escolhidos pelo professor (Ex: escrita, metalurgia, organização social, comércio, gênero).
 4.  **Âncoras de Evidência Empírica**: Excertos literais de documentos históricos primários (fontes arqueológicas e relatos) conjugados com a bibliografia científica de apoio recomendada para o professor.
+
+### Fundamentação Teórica da Engenharia de Prompts (The Prompt Report)
+
+A elaboração dos nossos prompts de sistema e templates foi estruturada em estrita conformidade com a taxonomia e as melhores práticas consolidadas em **"The Prompt Report: A Systematic Survey of Prompt Engineering Techniques" (Schulhoff et al., 2025/arXiv:2406.06608)**. Mapeamos os seguintes componentes conceituais descritos no relatório sistemático para conformar nosso motor gerador pedagógico:
+
+1. **Role/Persona Prompting (Seção 2.2.1.3)**: Estabelece um perfil analítico e instrutivo claro ("*International Pedagogical Expert*") para calibrar o tom das explicações e ajustar a densidade informativa histórica de acordo com as necessidades cognitivas dos segmentos escolares alvo (faixa de 6 a 14 anos).
+2. **Style Instructions (Seções 1.2.1 e 2.2.1.3)**: Determinam as diretrizes estilísticas de redação, exigindo sentenças curtas, glossários didáticos acoplados ao texto e a inserção de narrativas diárias de caráter humanizado (*storytelling*), em detrimento de terminologias abstratas ou jargões herméticos.
+3. **Output Formatting Constraints (Seções 1.2.1 e 4.2.2)**: Implementam delimitadores estritos na estrutura da resposta (Markdown em 4 seções idênticas pré-definidas), mitigando respostas ambíguas e garantindo a padronização operacional para integração transparente com o front-end.
+4. **Hardening Measures & Anti-Bias Guardrails (Seções 5.1.3 e 5.2.3)**: Configuram as "Instruções Inegociáveis" que funcionam como mecanismos de defesa contra alucinações ("*Zero Historical Hallucination*") e neutralizam preconceitos históricos (*culturally biassed/Eurocentric narratives*). Essas regras impedem a representação anacrônica do continente, a monopolização egípcia do preceito civilizatório e o foco oclusivo em períodos pós-soberania pré-colonial.
+5. **In-Context Grounded Learning (Seção 2.2.1)**: Em vez de os relatos didáticos dependerem unicamente do conhecimento de pre-treino do modelo, as âncoras empíricas do Seshat e as citações bibliográficas consensuais são injetadas diretamente na janela de contexto de inferência como exemplares textuais dinâmicos.
 
 ---
 
@@ -147,8 +157,8 @@ Siga os passos abaixo para implantar a plataforma em seu ambiente de desenvolvim
 
 ### 1. Clonar o Repositório
 ```bash
-git clone https://github.com/seu-usuario/afrodidatica.git
-cd afrodidatica
+git clone https://github.com/joaohenrique7950/AfroDidatica-.git
+cd AfroDidatica-
 ```
 
 ### 2. Configurar as Variáveis de Ambiente
@@ -233,6 +243,16 @@ The final prompt is formulated dynamically by concatenating four clean, structur
 2.  **Geodemographic & Temporal Context**: The exact chronological point selected on the map paired with corresponding social complexity indicators.
 3.  **Selected Curricular Topics**: Educational lenses checked by the teacher (e.g., writing, smelting technology, social organization, commerce, gender systems).
 4.  **Empirical Grounding Anchors**: Transcriptions of primary sources, archaeological findings, and consensus academic bibliography for teacher backup.
+
+### Theoretical Foundation of Prompt Engineering (The Prompt Report)
+
+Our prompt construction methodology and system instructions are formulated scientifically under the taxonomy and best practices detailed in **"The Prompt Report: A Systematic Survey of Prompt Engineering Techniques" (Schulhoff et al., 2025/arXiv:2406.06608)**. The design utilizes specific conceptual modules analyzed in the systematic survey:
+
+1. **Role/Persona Prompting (Section 2.2.1.3)**: Assumes a highly configured pedagogical avatar ("*International Pedagogical Expert*") to calibrate vocabulary thresholds and align explanations of historical phenomena to the cognitive baselines of K-12 students (ages 6 to 14).
+2. **Style Instructions (Sections 1.2.1 and 2.2.1.3)**: Explicitly govern linguistic tone and narrative delivery, demanding short sentences, embedded contextual glossaries, and empathy-based storytelling surrounding daily-life scenarios.
+3. **Output Formatting Constraints (Sections 1.2.1 and 4.2.2)**: Enforce a strict structural target using a layout-constrained Markdown envelope in 4 key sections. This prevents raw textual drift, boilerplate outputs, or system prompt leaking, ensuring reliable UI rendering.
+4. **Hardening Measures & Anti-Bias Guardrails (Sections 5.1.3 and 5.2.3)**: Act as "unnegotiable guidelines" to prevent hallucination (forcing a strict fallback message for uncorroborated facts) and correct common biases. They disable generic eurocentric simplifications, single-country African descriptions, Aksum/Kush exclusion, and late-era slave/colonization anchors.
+5. **In-Context Grounded Learning (Section 2.2.1)**: Replaces default pre-training weights and generic answers by injecting clean datasets (empirical Seshat coordinates and primary historical fragments) directly inside the model's active inference window as a dynamic context layer.
 
 ---
 
@@ -334,8 +354,8 @@ Follow these steps to deploy and run the platform in your local system:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/afrodidatica.git
-cd afrodidatica
+git clone https://github.com/joaohenrique7950/AfroDidatica-.git
+cd AfroDidatica-
 ```
 
 ### 2. Configure Environment Variables
