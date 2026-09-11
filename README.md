@@ -1,5 +1,5 @@
-# AfroDidática — Plataforma de Análise Histórica Georreferenciada e Inteligência Curricular
-### AfroDidactics — Georeferenced Historical Analysis & Curricular Intelligence Platform
+# AfroDidática — Plataforma de Análise Histórica Georreferenciada e Inteligência Curricular. (Protótipo)
+### AfroDidactics — Georeferenced Historical Analysis & Curricular Intelligence Platform (Prototype)
 
 ---
 
