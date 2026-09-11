@@ -196,11 +196,12 @@ npm start
 
 ---
 
-## 7. Licença e Apoio Historiográfico
+## 7. Licença e Consenso Historiográfico
 
-Este projeto é disponibilizado para uso educacional livre e incentiva a disseminação científica da história africana descolonizada.
+Este projeto é licenciado sob [Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR), acompanhando a licença do conjunto de dados do Seshat Global History Databank sobre o qual o projeto é construído. Você pode compartilhar e adaptar este material apenas para fins não comerciais, desde que dê o devido crédito e distribua qualquer obra derivada sob esta mesma licença.
 
-A base de dados empíricos foi consolidada tendo como referências fundamentais a coleção **História Geral da África** da **UNESCO** e as planilhas públicas validadas do repositório acadêmico **Seshat Global History Databank**.
+As bases informacionais e os documentos probatórios foram mapeados a partir de conjuntos de dados oficiais publicados pela **UNESCO** em sua coleção **História Geral da África** (CC BY-SA 4.0) e de registros verificados armazenados no **Seshat Global History Databank** (CC BY-NC-SA 4.0, seshatdatabank.info).
+
 
 ---
 ---
@@ -395,6 +396,6 @@ npm start
 
 ## 7. License & Historiographical Consensus
 
-This code is licensed under educational consensus guidelines, aimed at amplifying and disseminating pre-colonial historical records scientifically.
+This project is licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/), matching the license of the Seshat Global History Databank dataset it builds on. You may share and adapt this material for non-commercial purposes only, provided you give appropriate credit and distribute any derivative work under this same license.
 
-Information grounds and evidentiary documents were mapped using official datasets published by **UNESCO** in their **General History of Africa** collection and verified registers stored in the **Seshat Global History Databank**.
+Information grounds and evidentiary documents were mapped using official datasets published by **UNESCO** in their **General History of Africa** collection (CC BY-SA 4.0) and verified registers stored in the **Seshat Global History Databank** (CC BY-NC-SA 4.0, seshatdatabank.info).
