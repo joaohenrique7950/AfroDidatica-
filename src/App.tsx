@@ -287,7 +287,7 @@ export default function App() {
               id="reset-profile-btn"
               onClick={() => setProfile(null)}
               className="p-1.5 bg-white hover:bg-[#faf9f4] border border-[#d5cebf] rounded text-[#8c8273] hover:text-[#7a2c22] text-xs flex items-center gap-1 transition-all cursor-pointer shadow-sm"
-              title="Voltar para configuração"
+              title={t.backToSetup}
             >
               <LogOut className="h-3.5 w-3.5" />
             </button>

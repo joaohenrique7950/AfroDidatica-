@@ -197,7 +197,7 @@ export default function PedagogyGenerator({
           {focusTopics && focusTopics.length > 0 && (
             <div className="bg-[#faf9f4] p-2.5 rounded border border-[#ebdcc5]/40">
               <span className="text-[9.5px] uppercase font-bold text-[#7a2c22] font-mono block mb-1.5">
-                🎯 Focos Temáticos Ativos (Guia da IA):
+                🎯 {t.activeFocusTopics}:
               </span>
               <div className="flex flex-wrap gap-1.5">
                 {focusTopics.map((topicId) => {

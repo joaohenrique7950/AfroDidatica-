@@ -307,7 +307,7 @@ export default function Onboarding({ onComplete }: OnboardingProps) {
                 onClick={() => setStep(1)}
                 className="text-xs text-[#5c544d] hover:text-[#211a15] transition-colors cursor-pointer"
               >
-                ← Voltar
+                ← {t.back}
               </button>
               
               <button

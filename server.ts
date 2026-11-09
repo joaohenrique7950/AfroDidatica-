@@ -11,6 +11,17 @@ const PORT = 3000;
 
 app.use(express.json());
 
+// Resolve a language code (e.g. "sw", "zh-CN") to its English name for the model prompt.
+// Previously every code other than pt/en/fr was sent to Gemini as "Spanish".
+const LANGUAGE_CODE_PATTERN = /^[a-z]{2,3}(-[A-Za-z]{2,4})?$/;
+function languageNameFor(code: string): string {
+  try {
+    return new Intl.DisplayNames(['en'], { type: 'language' }).of(code) || 'English';
+  } catch {
+    return 'English';
+  }
+}
+
 // Helper function for lazy initialization of GoogleGenAI to prevent crashing at startup if the key is missing
 let aiClient: GoogleGenAI | null = null;
 function getGeminiClient(): GoogleGenAI {
@@ -54,6 +65,12 @@ app.post('/api/gemini/generate-pedagogy', async (req, res) => {
       res.status(400).json({ error: "Missing required parameters (language, pointName, format)." });
       return;
     }
+
+    if (typeof language !== 'string' || !LANGUAGE_CODE_PATTERN.test(language)) {
+      res.status(400).json({ error: "Invalid language code." });
+      return;
+    }
+    const languageName = languageNameFor(language);
 
     // Initialize client lazily and securely
     const ai = getGeminiClient();
@@ -130,7 +147,7 @@ REGRAS INEGOCIÁVEIS (GUARDRAILS):
 3. É PROIBIDO focar a narrativa em períodos posteriores de escravização ou colonização europeia. O foco exclusivo é a ÁFRICA ANTIGA E MEDIEVAL SOBERANA: destaque a agência, inovações tecnológicas, ciência, metalurgia avançada, arquitetura de pedra, comércio global e cultura endógena dos povos africanos.
 4. NUNCA invente fatos históricos (Zero Alucinação). Se não houver consenso historiográfico ou empírico sobre um tema específico ou detalhe, responda rigorosamente: "Os historiadores ainda estão pesquisando os detalhes exatos sobre isso."
 
-Output Language: You MUST write the entire output in the requested language: ${language === 'pt' ? 'Portuguese' : language === 'en' ? 'English' : language === 'fr' ? 'French' : 'Spanish'}.
+Output Language: You MUST write the entire output in the requested language: ${languageName}.
 `;
 
     // Localized headers and strings matching the mandatory PDF template format exactly
@@ -166,6 +183,9 @@ Output Language: You MUST write the entire output in the requested language: ${l
     };
 
     const activeTemplate = templatesByLanguage[language] || templatesByLanguage['en'];
+    const headingNote = templatesByLanguage[language]
+      ? ''
+      : `\nTranslate the teacher notice and the four section headings below into ${languageName}, keeping the emoji and Markdown markers.\n`;
 
     // Construct precise instruction prompt following the mandatory output layout structure
     const prompt = `
@@ -174,7 +194,7 @@ Create an engaging scholastic didactic content about '${pointName}' mapped to th
 Grounded Historical Context to use as evidence:
 ${groundingBlock}
 
-MANDATORY OUTPUT LAYOUT AND STRUCTURE:
+${headingNote}MANDATORY OUTPUT LAYOUT AND STRUCTURE:
 Your entire response MUST adhere strictly to the following Markdown text format. Replace the text in brackets with dense historical storytelling, and DO NOT output generic boilerplate. Double check that you output all 4 sections with the exact localized headers specified below.
 
 ## [Escreva um Título Criativo e Chamativo do Material]
@@ -252,6 +272,12 @@ app.post('/api/gemini/generate-quiz', async (req, res) => {
       return;
     }
 
+    if (typeof language !== 'string' || !LANGUAGE_CODE_PATTERN.test(language)) {
+      res.status(400).json({ error: "Invalid language code." });
+      return;
+    }
+    const languageName = languageNameFor(language);
+
     const ai = getGeminiClient();
 
     let contextBlock = `
@@ -277,13 +303,13 @@ You are an expert historian of Ancient African History and a university test-mak
 Your task is to generate exactly 3 interactive, extremely high-quality multiple-choice questions to test comprehension and logical reasoning about the civilization '${pointName}'.
 The questions and answers MUST be highly accurate, educational, and free from Eurocentric biases, highlighting African achievements (like advanced iron smelting, written scripts, architecture, queens, or complex trade).
 Ground the questions on the provided context.
-Generate the response strictly in the language requested: '${language}'.
+Generate the response strictly in ${languageName}.
 You must return a valid JSON array matching the requested schema. Do not output anything else.
 `;
 
     const prompt = `
 Generate exactly 3 multiple choice questions for grade level context: '${gradeLevel}'.
-Language of outputs: ${language === 'pt' ? 'Portuguese' : language === 'en' ? 'English' : language === 'fr' ? 'French' : 'Spanish'}.
+Language of outputs: ${languageName}.
 
 Historical Context to base questions on:
 ${contextBlock}

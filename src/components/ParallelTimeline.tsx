@@ -614,11 +614,11 @@ export default function ParallelTimeline({
       {/* Main Interactive Slider Ruler Section */}
       <div id="chronology-ruler" className="bg-[#faf9f4] p-5.5 rounded-lg border border-[#ebdcc5]/45 flex flex-col gap-4 font-sans text-slate-900 shadow-inner">
         <div className="flex justify-between items-center text-xs font-mono font-bold text-[#7a2c22]">
-          <span>3000 AC</span>
+          <span>3000 {t.bce}</span>
           <span className="text-sm bg-[#7a2c22] text-[#fcfbf7] px-3.5 py-0.5 rounded font-bold font-serif shadow-sm">
             {activePeriod.label[language]}
           </span>
-          <span>1500 DC</span>
+          <span>1500 {t.ce}</span>
         </div>
         
         {/* Fine Chronology Draggable Rail */}
