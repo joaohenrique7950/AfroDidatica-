@@ -7,6 +7,8 @@ import { translateText, WORLD_LANGUAGES } from '../utils/translator';
 
 interface PedagogyGeneratorProps {
   language: Language;
+  /** Language the AI should write in; may differ from the interface language. */
+  outputLanguage: Language;
   point: HistoricalPoint | null;
   selectedDocId: string | null;
   selectedBibId: string | null;
@@ -17,6 +19,7 @@ interface PedagogyGeneratorProps {
 
 export default function PedagogyGenerator({
   language,
+  outputLanguage,
   point,
   selectedDocId,
   selectedBibId,
@@ -68,7 +71,7 @@ export default function PedagogyGenerator({
 
     try {
       const payload = {
-        language,
+        language: outputLanguage,
         pointId: point.id,
         pointName: point.name[language],
         eraLabel: point.eraLabel[language],
@@ -127,7 +130,7 @@ export default function PedagogyGenerator({
       title: draftTitle,
       content: aiDraft,
       createdAt: new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'),
-      language
+      language: outputLanguage
     };
 
     onSaveResource(resource);
@@ -146,7 +149,7 @@ export default function PedagogyGenerator({
       title: draftTitle,
       content: aiDraft,
       createdAt: new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'),
-      language
+      language: outputLanguage
     };
 
     generatePedagogyPDF(tempResource, gradeLevel);

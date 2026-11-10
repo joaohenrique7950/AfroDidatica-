@@ -32,7 +32,7 @@ export default function Onboarding({ onComplete }: OnboardingProps) {
   const [grade, setGrade] = useState<'primary' | 'middle' | 'high' | 'university'>('middle');
   const [selectedTopics, setSelectedTopics] = useState<string[]>([]);
 
-  const t = translations[lang] || translations['pt'];
+  const t = translations[lang] || translations['en'];
 
   const topicsList = [
     { id: 'social_scale', label: { pt: 'Complexidade de Escala, Território & População', en: 'Scale Complexity, Territory & Population', fr: 'Échelle Sociale, Territoire & Population', es: 'Escala de Complejidad, Territorio y Población' } },
@@ -292,7 +292,7 @@ export default function Onboarding({ onComplete }: OnboardingProps) {
                           : 'bg-white border-[#d5cebf] text-[#5c544d] hover:bg-[#faf9f4]'
                       }`}
                     >
-                      <span>{topic.label[lang as 'pt'] || topic.label['pt']}</span>
+                      <span>{topic.label[lang as 'pt'] || topic.label['en']}</span>
                       <span className={`w-2.5 h-2.5 rounded-full transition-all ${isSel ? 'bg-[#3e5a4d] scale-110' : 'bg-[#d5cebf]'}`} />
                     </button>
                   );

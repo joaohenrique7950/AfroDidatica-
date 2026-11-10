@@ -110,7 +110,7 @@ export function generatePedagogyPDF(resource: GeneratedPedagogy, gradeLevel: str
     }
   };
 
-  const activeLang = resource.language in translations ? resource.language : 'pt';
+  const activeLang = resource.language in translations ? resource.language : 'en';
   const labels = translations[activeLang];
 
   const formatLabel = labels[resource.format] || resource.format;
