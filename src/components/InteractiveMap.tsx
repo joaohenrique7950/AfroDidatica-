@@ -880,7 +880,7 @@ export default function InteractiveMap({
             }`}
             title="Exibir os principais impérios curados detalhadamente"
           >
-            🏛️ Destaques (12)
+            🏛️ {t.featuredPoints} (12)
           </button>
           <button
             id="toggle-dataset-polaris"
@@ -893,7 +893,7 @@ export default function InteractiveMap({
             }`}
             title="Exibir o banco de dados oficial Polaris completo"
           >
-            📊 Polaris Completo (152)
+            📊 {t.fullPolaris} (152)
           </button>
         </div>
       </div>
@@ -1150,7 +1150,7 @@ export default function InteractiveMap({
                   {language === 'pt' ? 'MARCO HISTÓRICO' : 'HISTORIC MILESTONE'}
                 </span>
                 <span className="text-[9.5px] font-mono font-bold ml-auto text-[#7a2c22]">
-                  {currentCriticalEvent.year < 0 ? `${Math.abs(currentCriticalEvent.year)} a.C.` : `${currentCriticalEvent.year} d.C.`}
+                  {currentCriticalEvent.year < 0 ? `${Math.abs(currentCriticalEvent.year)} ${t.bce}` : `${currentCriticalEvent.year} ${t.ce}`}
                 </span>
               </div>
               
@@ -2027,7 +2027,7 @@ export default function InteractiveMap({
                     onClick={() => setSelectedOverlayEntity(null)}
                     className="text-[#ea996c] hover:text-[#fff] text-[9px] bg-[#ea996c]/10 px-1.5 py-0.5 rounded cursor-pointer transition-all border border-[#ea996c]/30"
                   >
-                    ← {language === 'pt' ? 'Voltar' : 'Back'}
+                    ← {t.back}
                   </button>
                 )}
                 <button
@@ -2226,7 +2226,7 @@ export default function InteractiveMap({
           </div>
           <div className="flex items-center gap-3">
             <span className="text-[14px] font-mono font-black text-[#7a2c22] bg-white border border-[#e5dfd5] px-2.5 py-0.5 rounded shadow-xs animate-pulse">
-              {timelineYear < 0 ? `${Math.abs(timelineYear)} a.C. / BC` : `${timelineYear} d.C. / AD`}
+              {timelineYear < 0 ? `${Math.abs(timelineYear)} ${t.bce}` : `${timelineYear} ${t.ce}`}
             </span>
             <label className="flex items-center gap-1.5 cursor-pointer text-[10px] font-bold text-slate-600 select-none">
               <input 
@@ -2373,11 +2373,11 @@ export default function InteractiveMap({
               className="w-full h-2 bg-[#e5dfd5] rounded-lg appearance-none cursor-ew-resize accent-[#7a2c22] focus:outline-none transition-all"
             />
             <div className="flex justify-between text-[8px] font-mono text-slate-500 px-0.5">
-              <span>-3000 AC</span>
-              <span>-1500 AC</span>
-              <span>0 (ERA COMUM)</span>
-              <span>900 DC</span>
-              <span>1800 DC</span>
+              <span>3000 {t.bce}</span>
+              <span>1500 {t.bce}</span>
+              <span>0 ({t.commonEra})</span>
+              <span>900 {t.ce}</span>
+              <span>1800 {t.ce}</span>
             </div>
           </div>
         </div>
@@ -2391,7 +2391,7 @@ export default function InteractiveMap({
             <div className="flex flex-wrap gap-1.5 max-h-[75px] overflow-y-auto pr-1 pb-1">
               {CRITICAL_EVENTS.map((ev) => {
                 const isCurrent = timelineYear >= ev.year && timelineYear <= ev.year + 250;
-                const formattedYear = ev.year < 0 ? `${Math.abs(ev.year)} a.C.` : `${ev.year} d.C.`;
+                const formattedYear = ev.year < 0 ? `${Math.abs(ev.year)} ${t.bce}` : `${ev.year} ${t.ce}`;
                 const title = language === 'pt' ? ev.ptTitle : ev.enTitle;
                 return (
                   <button

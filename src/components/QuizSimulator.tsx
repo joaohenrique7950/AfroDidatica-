@@ -12,11 +12,13 @@ interface QuizQuestion {
 
 interface QuizSimulatorProps {
   language: Language;
+  /** Language the AI should write in; may differ from the interface language. */
+  outputLanguage: Language;
   point: HistoricalPoint | null;
   onboardingFocus: string[];
 }
 
-export default function QuizSimulator({ language, point, onboardingFocus }: QuizSimulatorProps) {
+export default function QuizSimulator({ language, outputLanguage, point, onboardingFocus }: QuizSimulatorProps) {
   const [questions, setQuestions] = useState<QuizQuestion[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
@@ -326,7 +328,7 @@ export default function QuizSimulator({ language, point, onboardingFocus }: Quiz
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          language,
+          language: outputLanguage,
           pointName: point.name[language] || point.name.pt,
           description: point.description[language] || point.description.pt,
           selectedDoc: point.primaryDocuments?.[0] || null,

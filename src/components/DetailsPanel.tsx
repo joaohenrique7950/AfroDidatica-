@@ -82,7 +82,7 @@ export default function DetailsPanel({
             Seshat Historical Database Variables
           </h4>
           <p className="text-[10px] text-[#5c544d] mb-3 leading-snug">
-            Variáveis quantitativas de complexidade social extraídas e mapeadas da planilha oficial Polaris:
+            {t.seshatVarsIntro}
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -168,7 +168,7 @@ export default function DetailsPanel({
               Dados Contemplados & Extraíveis (What can we extract)
             </h4>
             <p className="text-[10px] text-[#5c544d] leading-snug">
-              Três paradigmas empíricos de complexidade civilizacional africana extraídos do dataset Polaris / Seshat:
+              {t.extractableIntro}
             </p>
 
             <div className="space-y-3">

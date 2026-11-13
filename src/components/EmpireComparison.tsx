@@ -186,7 +186,7 @@ export default function EmpireComparison({ language, points }: EmpireComparisonP
               {/* Matrix Headings */}
               <div className="grid grid-cols-12 bg-[#faf9f4] border-b border-[#ebdcc5]/45 text-center items-center py-2.5 px-3">
                 <div className="col-span-4 text-left text-[9px] font-bold uppercase tracking-widest text-[#7a2c22] font-mono">
-                  Dimensão Analítica
+                  {t.analyticalDimension}
                 </div>
                 <div className="col-span-4 text-center text-xs font-serif font-bold text-[#7a2c22] truncate px-1">
                   {empireA.name[language]}
