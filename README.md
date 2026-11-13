@@ -1,13 +1,5 @@
-<p align="center">
-  <img
-    src="https://github.com/user-attachments/assets/f0051bec-0f06-4fb6-ab2c-8a8a89af1e17"
-    alt="AfroDidatica"
-    width="600"
-    height="400"
-  />
-</p>
 
-
+<img width="600" height="130" alt="afrodidatica_logo_color_600px" src="https://github.com/user-attachments/assets/4f54f198-8162-487c-9916-e63037b02d16" />
 
 
 # AfroDidática — Plataforma de Análise Histórica Georreferenciada e Inteligência Curricular. (Protótipo)
