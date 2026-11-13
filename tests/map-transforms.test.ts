@@ -1,3 +1,4 @@
+
 import test from 'node:test';
 import assert from 'node:assert';
 import { parsePeriodToYears, getEmpireStrength, pointMatchesOverlay } from '../src/components/InteractiveMap';
@@ -28,7 +29,7 @@ test('InteractiveMap - Mathematical and period transforms characterization', asy
   });
 
   await t.test('parsePeriodToYears characterized behavior for prefixes and edge cases', () => {
-    // Characterized limitation: "c." prefix causes numeric extraction to fail on start part
+    // Characterized limitation: "c." prefix causes numeric extraction to fail
     const circaResult = parsePeriodToYears('c. 100 CE - 940 CE');
     assert.strictEqual(circaResult.startYear, 0, 'Characterized behavior: "c." prefix parses to 0');
     assert.strictEqual(circaResult.endYear, 940);
@@ -48,7 +49,9 @@ test('InteractiveMap - Mathematical and period transforms characterization', asy
     const kush = defaultHistoricalPoints.find(p => p.id === 'kush_meroe');
     assert.ok(kush, 'kush_meroe must exist in default points');
 
-    // kush_meroe config: startYear: -2500, peakStartYear: -750, peakEndYear: 350, endYear: 400, maxRadius: 52
+    // kush_meroe config: startYear: -2500, peakStartYear: -750,
+    // peakEndYear: 350, endYear: 400, maxRadius: 52
+
     // 1. Outside timeline range before start
     const beforeResult = getEmpireStrength(kush, -3000);
     assert.strictEqual(beforeResult.strength, 0);
@@ -57,15 +60,16 @@ test('InteractiveMap - Mathematical and period transforms characterization', asy
     // 2. Growth ramp: midpoint between -2500 and -750 is -1625
     const rampResult = getEmpireStrength(kush, -1625);
     assert.strictEqual(rampResult.strength, 0.5);
-    // r = maxRadius * (0.35 + 0.65 * 0.5) = 52 * 0.675 = 35.1
+
+    // r = 52 * (0.35 + 0.65 * 0.5) = 35.1
     assert.strictEqual(Math.round(rampResult.r * 10) / 10, 35.1);
 
-    // 3. Peak plateau (year 0, within [-750, 350])
+    // 3. Peak plateau
     const peakResult = getEmpireStrength(kush, 0);
     assert.strictEqual(peakResult.strength, 1);
     assert.strictEqual(peakResult.r, 52);
 
-    // 4. Decay ramp: midpoint between 350 and 400 is 375
+    // 4. Decay ramp
     const decayResult = getEmpireStrength(kush, 375);
     assert.strictEqual(decayResult.strength, 0.5);
     assert.strictEqual(Math.round(decayResult.r * 10) / 10, 35.1);
@@ -92,20 +96,18 @@ test('InteractiveMap - Mathematical and period transforms characterization', asy
     };
 
     // start: -1000, end: -500. Range: 500.
-    // peakStart = -1000 + 500 * 0.35 = -825.
-    // peakEnd = -1000 + 500 * 0.65 = -675.
-    // At year -750 (midpoint plateau): strength = 1, r = 30 (default maxRadius)
+    // peakStart = -825, peakEnd = -675.
+    // At year -750: strength = 1, r = 30
     const result = getEmpireStrength(mockPoint, -750);
     assert.strictEqual(result.strength, 1);
     assert.strictEqual(result.r, 30);
-    assert.strictEqual(result.color, '#c5a880'); // antiquity color
+    assert.strictEqual(result.color, '#c5a880');
   });
 
   await t.test('pointMatchesOverlay supports exact defined overlay identifiers', () => {
     const kush = defaultHistoricalPoints.find(p => p.id === 'kush_meroe')!;
     const kemet = defaultHistoricalPoints.find(p => p.id === 'egypt_kemet')!;
 
-    // Supported overlay IDs:
     assert.strictEqual(pointMatchesOverlay(kush, 'metallurgy'), true, 'Kush matches metallurgy');
     assert.strictEqual(pointMatchesOverlay(kush, 'matriarchy'), true, 'Kush matches matriarchy');
     assert.strictEqual(pointMatchesOverlay(kemet, 'writing_systems'), true, 'Kemet matches writing_systems');
@@ -113,5 +115,95 @@ test('InteractiveMap - Mathematical and period transforms characterization', asy
 
     // Negative / unsupported overlay check
     assert.strictEqual(pointMatchesOverlay(kush, 'unknown_overlay_id'), false, 'Unknown overlay must return false');
+  });
+
+  // NEW: Trade and Currency overlay regression tests
+  await t.test('trade_currency overlay regression', () => {
+    const mali = defaultHistoricalPoints.find(p => p.id === 'mali_empire');
+    assert.ok(mali, 'mali_empire must exist in default points');
+
+    // Positive: match by known historical entity ID
+    assert.strictEqual(
+      pointMatchesOverlay(mali, 'trade_currency'),
+      true,
+      'Mali Empire must match trade_currency by ID'
+    );
+
+    // Positive: match by trade-related description
+    const tradePoint: HistoricalPoint = {
+      ...mali,
+      id: 'test_trade_point',
+      description: {
+        pt: 'Rota comercial',
+        en: 'Trade route'
+      }
+    };
+
+    assert.strictEqual(
+      pointMatchesOverlay(tradePoint, 'trade_currency'),
+      true,
+      'Trade-related description must match trade_currency'
+    );
+
+    // Negative: no matching ID or trade-related keywords
+    const neutralPoint: HistoricalPoint = {
+      ...mali,
+      id: 'test_neutral_point',
+      description: {
+        pt: 'Local histórico',
+        en: 'Historical site'
+      }
+    };
+
+    assert.strictEqual(
+      pointMatchesOverlay(neutralPoint, 'trade_currency'),
+      false,
+      'Unrelated historical point must not match trade_currency'
+    );
+  });
+
+  //Monumental Architecture overlay regression tests
+  await t.test('monumental_architecture overlay regression', () => {
+    const zimbabwe = defaultHistoricalPoints.find(p => p.id === 'great_zimbabwe');
+    assert.ok(zimbabwe, 'great_zimbabwe must exist in default points');
+
+    // Positive: match by known historical entity ID
+    assert.strictEqual(
+      pointMatchesOverlay(zimbabwe, 'monumental_architecture'),
+      true,
+      'Great Zimbabwe must match monumental_architecture by ID'
+    );
+
+    // Positive: match by architecture-related description
+    const architecturePoint: HistoricalPoint = {
+      ...zimbabwe,
+      id: 'test_architecture_point',
+      description: {
+        pt: 'Construção em pedra',
+        en: 'Stone construction'
+      }
+    };
+
+    assert.strictEqual(
+      pointMatchesOverlay(architecturePoint, 'monumental_architecture'),
+      true,
+      'Architecture-related description must match monumental_architecture'
+    );
+
+    // Negative: no matching ID or architecture-related keywords
+    const neutralPoint: HistoricalPoint = {
+      ...zimbabwe,
+      id: 'test_neutral_point',
+      description: {
+        pt: 'Local histórico',
+        en: 'Historical site'
+      }
+    };
+
+    assert.strictEqual(
+      pointMatchesOverlay(neutralPoint, 'monumental_architecture'),
+      false,
+      'Unrelated historical point must not match monumental_architecture'
+    );
   });
 });
