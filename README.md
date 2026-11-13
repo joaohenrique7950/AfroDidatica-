@@ -1,4 +1,11 @@
-<img width="1536" height="1024" alt="Afrodidatica" src="https://github.com/user-attachments/assets/f0051bec-0f06-4fb6-ab2c-8a8a89af1e17" />
+<p align="center">
+  <img
+    src="https://github.com/user-attachments/assets/f0051bec-0f06-4fb6-ab2c-8a8a89af1e17"
+    alt="AfroDidatica"
+    width="600"
+    height="400"
+  />
+</p>
 
 
 
