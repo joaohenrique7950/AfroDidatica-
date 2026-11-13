@@ -1,13 +1,13 @@
 import express from 'express';
 import path from 'path';
+import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
-import { createServer as createViteServer } from 'vite';
 import { GoogleGenAI, Type } from '@google/genai';
 
 dotenv.config();
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 
 app.use(express.json());
 
@@ -22,9 +22,24 @@ function languageNameFor(code: string): string {
   }
 }
 
+// Minimal interface representing the Gemini models client capability for testing
+export interface GeminiModelClient {
+  models: {
+    generateContent: (params: any) => Promise<{ text?: string | null }>;
+  };
+}
+
 // Helper function for lazy initialization of GoogleGenAI to prevent crashing at startup if the key is missing
-let aiClient: GoogleGenAI | null = null;
-function getGeminiClient(): GoogleGenAI {
+let aiClient: GoogleGenAI | GeminiModelClient | null = null;
+
+export function __setAiClientForTesting(client: GeminiModelClient | null) {
+  if (process.env.NODE_ENV === 'production') {
+    throw new Error('Test client injection is prohibited in production.');
+  }
+  aiClient = client;
+}
+
+function getGeminiClient(): GoogleGenAI | GeminiModelClient {
   if (!aiClient) {
     const key = process.env.GEMINI_API_KEY;
     if (!key) {
@@ -368,22 +383,52 @@ ${contextBlock}
 // Serve compiled assets or boot Vite as dev middleware
 async function setupServer() {
   if (process.env.NODE_ENV !== 'production') {
+    const { createServer: createViteServer } = await import('vite');
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: 'spa'
     });
     app.use(vite.middlewares);
   } else {
-    const distPath = path.join(process.cwd(), 'dist');
+    const distPath = process.env.DIST_PATH || path.resolve(process.cwd(), 'dist');
     app.use(express.static(distPath));
     app.get('*', (req, res) => {
       res.sendFile(path.join(distPath, 'index.html'));
     });
   }
 
-  app.listen(PORT, '0.0.0.0', () => {
+  const server = app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server successfully running on port ${PORT}`);
   });
+  return server;
 }
 
-setupServer();
+function checkIsMainModule(): boolean {
+  // CommonJS main module execution check
+  if (typeof require !== 'undefined' && typeof module !== 'undefined' && require.main === module) {
+    return true;
+  }
+  // ESM main module execution check
+  if (typeof import.meta !== 'undefined' && import.meta.url && process.argv[1]) {
+    try {
+      const modulePath = fileURLToPath(import.meta.url);
+      const scriptPath = path.resolve(process.argv[1]);
+      if (modulePath === scriptPath) return true;
+    } catch {
+      // ignore resolution error
+    }
+  }
+  // Safe CLI runner fallback
+  return Boolean(
+    process.argv[1] &&
+    (process.argv[1].endsWith('server.ts') || process.argv[1].endsWith('server.cjs'))
+  );
+}
+
+export { app, setupServer };
+
+const isMainModule = checkIsMainModule();
+
+if (isMainModule && process.env.NODE_ENV !== 'test') {
+  setupServer();
+}
