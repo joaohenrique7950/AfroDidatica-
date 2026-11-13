@@ -1,3 +1,8 @@
+<img width="1536" height="1024" alt="Afrodidatica" src="https://github.com/user-attachments/assets/f0051bec-0f06-4fb6-ab2c-8a8a89af1e17" />
+
+
+
+
 # AfroDidática — Plataforma de Análise Histórica Georreferenciada e Inteligência Curricular. (Protótipo)
 ### AfroDidactics — Georeferenced Historical Analysis & Curricular Intelligence Platform (Prototype)
 
