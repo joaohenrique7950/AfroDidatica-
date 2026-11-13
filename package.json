@@ -9,7 +9,7 @@
     "start": "node dist/server.cjs",
     "lint": "tsc --noEmit",
     "typecheck": "tsc --noEmit",
-    "test:unit": "node --import tsx --test \"tests/checksums.test.ts\" \"tests/data-invariants.test.ts\" \"tests/api-contracts.test.ts\" \"tests/client-state.test.ts\"",
+    "test:unit": "node --import tsx --test \"tests/checksums.test.ts\" \"tests/data-invariants.test.ts\" \"tests/api-contracts.test.ts\" \"tests/client-state.test.ts\" \"tests/map-transforms.test.ts\" \"tests/timeline-data.test.ts\"",
     "test:build": "node --import tsx --test \"tests/build-artifacts.test.ts\"",
     "test:smoke": "node --import tsx tests/smoke-production.ts",
     "test": "node --import tsx --test \"tests/**/*.test.ts\""

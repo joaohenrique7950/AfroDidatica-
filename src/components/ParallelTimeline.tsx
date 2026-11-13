@@ -23,7 +23,7 @@ interface ParallelPeriod {
 }
 
 // Global parallel history database
-const parallelPeriods: ParallelPeriod[] = [
+export const parallelPeriods: ParallelPeriod[] = [
   {
     year: -3000,
     label: { pt: "3000 AC", en: "3000 BC", fr: "3000 AEC", es: "3000 AC" },

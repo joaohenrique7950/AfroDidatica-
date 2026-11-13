@@ -236,7 +236,7 @@ const empireConfig: Record<string, {
   }
 };
 
-const parsePeriodToYears = (periodStr: string): { startYear: number; endYear: number } => {
+export const parsePeriodToYears = (periodStr: string): { startYear: number; endYear: number } => {
   try {
     const parts = periodStr.split('-');
     if (parts.length < 2) return { startYear: 0, endYear: 0 };
@@ -266,7 +266,7 @@ const parsePeriodToYears = (periodStr: string): { startYear: number; endYear: nu
   }
 };
 
-const getEmpireStrength = (p: HistoricalPoint, targetYear: number) => {
+export const getEmpireStrength = (p: HistoricalPoint, targetYear: number) => {
   let config = empireConfig[p.id];
   if (!config) {
     const parsed = parsePeriodToYears(p.period?.en || p.period?.pt || "");
